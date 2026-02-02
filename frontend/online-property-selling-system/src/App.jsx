@@ -24,10 +24,12 @@ import PropertyDetails from "./pages/buyer/PropertyDetails";
 import MyBookings from "./pages/buyer/MyBookings";
 import ContactSeller from "./pages/buyer/ContactSeller";
 import Wishlist from "./pages/buyer/WishList";
+import InquiriesBuyer from "./pages/buyer/InquiriesBuyer";
 import About from "./pages/About";
 import Rent from "./pages/Rent";
 import Sell from "./pages/Sell";
 import ApproveListings from "./pages/admin/ApproveListings";
+import Buy from "./pages/Buy";
 
 function App() {
   // ---- GLOBAL WISHLIST STATE ----
@@ -56,6 +58,7 @@ function App() {
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/about" element={<About />} />
         <Route path="/rent" element={<Rent />} />
+        <Route path="/buy" element={<Buy />} />
         <Route path="/sell" element={<Sell />} />
 
         <Route path="/admin" element={<AdminDashboard />} />
@@ -75,12 +78,11 @@ function App() {
           element={<SearchProperties setWishlist={setWishlist} />}
         />
 
-        <Route path="/buyer/property-details" element={<PropertyDetails />} />
-        <Route path="/buyer/property-details/:id" element={<PropertyDetails />} />
-        <Route path="/buyer/messages" element={<Messages />} />
+        <Route path="/buyer/property-details/:propertyId" element={<PropertyDetails />} />
+         <Route path="/buyer/messages" element={<Messages />} />
         <Route path="/buyer/bookings" element={<MyBookings />} />
         <Route path="/buyer/contact-seller" element={<ContactSeller />} />
-        
+        <Route path="/buyer/inquiriesBuyer" element={<InquiriesBuyer />} />
         <Route path="/admin/approve-listings" element={<ApproveListings />} />
       </Routes>
 
