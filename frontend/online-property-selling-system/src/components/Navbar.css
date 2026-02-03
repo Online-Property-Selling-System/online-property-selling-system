@@ -1,0 +1,102 @@
+/* ================================
+   NAVBAR BASE
+================================ */
+.adani-navbar {
+  background: linear-gradient(135deg, #0b1220, #0f172a);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  z-index: 1030;
+}
+
+/* Brand */
+.navbar-brand {
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  color: #ffffff !important;
+}
+
+/* ================================
+   DASHBOARD BUTTON (CRITICAL)
+================================ */
+.navbar-dashboard-btn {
+  position: relative;       /* REQUIRED for click */
+  z-index: 1050;            /* ABOVE bootstrap collapse */
+  pointer-events: auto;
+  white-space: nowrap;
+}
+
+/* Dashboard styling */
+.btn-dashboard {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #ffffff;
+  border-radius: 28px;
+  padding: 6px 18px;
+  font-weight: 500;
+  border: none;
+}
+
+.btn-dashboard:hover {
+  background: linear-gradient(135deg, #1e40af, #1e3a8a);
+  color: #ffffff;
+}
+
+/* ================================
+   NAV LINKS
+================================ */
+.nav-link {
+  color: #e5e7eb !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+}
+
+/* ================================
+   WISHLIST BADGE
+================================ */
+.wishlist-badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: #ef4444;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+.btn-outline-light {
+  border-radius: 20px;
+  padding: 4px 14px;
+}
+
+/* ================================
+   MOBILE MENU FIX (RIGHT SIDE)
+================================ */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  .navbar-nav {
+    align-items: flex-end;          /* push items to right */
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link {
+    padding-right: 0;
+  }
+
+  .navbar-dashboard-btn {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
