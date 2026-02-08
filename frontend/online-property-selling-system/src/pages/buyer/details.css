@@ -1,0 +1,98 @@
+/* details.css */
+
+.bg-light-subtle {
+    background-color: #fcfcfd;
+}
+
+/* Image Grid Styling */
+.main-img-container, .side-img-container {
+    cursor: pointer;
+}
+
+.hover-zoom {
+    transition: transform 0.6s ease;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+/* Overview Icons */
+.bi-door-open, .bi-droplet, .bi-bounding-box {
+    opacity: 0.8;
+}
+
+/* Sticky Action Card */
+.sticky-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+.action-card {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+.agent-avatar {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+/* Breadcrumbs */
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "›";
+    font-size: 1.2rem;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.btn-white {
+    background: white;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.btn-white:hover {
+    background: #f8fafc;
+}
+
+/* Card Improvements */
+.rounded-4 {
+    border-radius: 1.25rem !important;
+}
+
+.leading-relaxed {
+    line-height: 1.7;
+}/* Custom styling for the Map to make it feel 'Designer' */
+iframe {
+  /* This gives the map a slightly more modern, muted tone */
+  filter: sepia(10%) hue-rotate(180deg) brightness(105%) contrast(95%);
+  transition: filter 0.5s ease;
+}
+
+iframe:hover {
+  filter: none; /* Map returns to full color when interacted with */
+}
+
+/* Make the sidebar card 'pop' more with a subtle glow */
+.action-card {
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Styling for the amenities checkmarks */
+.bi-check-lg {
+  font-weight: 900 !important;
+}
+
+.bg-success-subtle {
+  background-color: #e6f6ec !important; /* Soft mint green */
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

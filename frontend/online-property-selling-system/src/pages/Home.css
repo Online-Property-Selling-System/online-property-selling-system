@@ -1,0 +1,140 @@
+/* Home.css */
+
+/* Theme variables */
+.home-page-root {
+  --indigo-primary: #6366f1;
+  --indigo-dark: #020617;
+  --indigo-muted: #818cf8;
+  --royal-purple: #a855f7;
+  --soft-white: #f8fafc;
+}
+
+/* Hero background */
+.home-page-root .hero-bg {
+  background: linear-gradient(135deg, #020617 0%, #1e1b4b 100%);
+  position: relative;
+}
+
+.home-page-root .bg-indigo-glow { 
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.25) 0%, transparent 70%); 
+}
+
+.home-page-root .bg-purple-glow { 
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.2) 0%, transparent 70%); 
+}
+
+/* Typography */
+.home-page-root .text-gradient-indigo {
+  background: linear-gradient(90deg, #a5b4fc, #e879f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.home-page-root .text-indigo-gray { color: #cbd5e1; }
+.home-page-root .text-indigo-bright { color: #a5b4fc; }
+
+/* Primary Button */
+.home-page-root .btn-indigo-primary {
+  background: #6366f1 !important;
+  color: #ffffff !important;
+  border: none !important;
+  font-weight: 700;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+.home-page-root .btn-indigo-primary:hover {
+  background: #4f46e5 !important;
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(99, 102, 241, 0.5);
+}
+
+/* Glass Button */
+.home-page-root .btn-outline-glass {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  color: white !important;
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+}
+
+.home-page-root .btn-outline-glass:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: white !important;
+}
+
+/* Golden Buttons */
+.btn-golden {
+  background-color: #d4af37 !important;
+  color: white !important;
+  border-color: #d4af37 !important;
+}
+
+.btn-golden-outline {
+  background-color: transparent !important;
+  border: 2px solid #d4af37 !important;
+  color: inherit !important; /* keep initial font color */
+  transition: all 0.3s ease-in-out !important;
+}
+
+.btn-golden-outline:hover {
+  background-color: #d4af37 !important;
+  color: #ffffff !important;
+  border-color: #d4af37 !important;
+}
+
+/* Search & Input focus */
+.home-page-root .shadow-soft-xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+}
+
+.home-page-root .form-control:focus, 
+.home-page-root .form-select:focus {
+  background-color: #ffffff !important;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15) !important;
+  border-color: #6366f1 !important;
+}
+
+/* Stats */
+.home-page-root .stat-value {
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+/* Cards */
+.home-page-root .property-card-v2 {
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+}
+
+.home-page-root .property-card-v2:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 40px 60px -15px rgba(0, 0, 0, 0.12) !important;
+}
+
+.home-page-root .card-zoom {
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.home-page-root .property-card-v2:hover .card-zoom {
+  transform: scale(1.1);
+}
+
+/* Hero image glass wrapper */
+.home-page-root .hero-img-wrapper {
+  border-radius: 2.5rem;
+  border: 10px solid rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.5);
+}
+
+.home-page-root .glass-card-stats {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
